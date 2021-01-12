@@ -26,7 +26,7 @@ export function setWin(win: boolean) {
 
 export function initCreate() {
   const symbols = [...'abcdefghijklmnopqrstuvwxyz'];
-  const pairsCount = 36;
+  const pairsCount = 12;
 
   let shuffledSymbols = symbols.sort(() => 0.5 - Math.random());
   shuffledSymbols = shuffledSymbols.slice(0, pairsCount);
