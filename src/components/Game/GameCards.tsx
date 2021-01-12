@@ -17,7 +17,7 @@ const GameCards = ({ init, click, cards, win, previous }: any) => {
   }, []);
 
   const handleCardClick = (card: CardProps) => {
-    click(card, previous, cards);
+    click(card);
   };
 
   if (win) {

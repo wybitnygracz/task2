@@ -3,7 +3,7 @@ import { CardProps } from '../types';
 type ActionType =
   | { type: 'SET_CARDS'; cards: Array<CardProps> }
   | { type: 'SET_WIN'; win: boolean }
-  | { type: 'SET_PREVIOUS'; previous: CardProps };
+  | { type: 'SET_PREVIOUS'; previous: CardProps | null };
 
 export type StateType = {
   cards: Array<CardProps>;
